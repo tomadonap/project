@@ -10,7 +10,7 @@ public class NavMeshAgentControlMixerBehaviour : PlayableBehaviour
         int inputCount = playable.GetInputCount();
 
         for (int i = 0; i < inputCount; i++)
-        {
+        {//yes
             float inputWeight = playable.GetInputWeight(i);
             ScriptPlayable<NavMeshAgentControlBehaviour> inputPlayable = (ScriptPlayable<NavMeshAgentControlBehaviour>)playable.GetInput(i);
             NavMeshAgentControlBehaviour input = inputPlayable.GetBehaviour();
